@@ -6,3 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo hello
+      - run: gcc --version | head -1
+      - run: python3 --version
+      - run: nproc && free -m | head -2
+      - run: echo done
